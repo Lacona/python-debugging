@@ -6,7 +6,7 @@ import sys
 # import pdb; pdb.set_trace()
 
 height = float(sys.argv[1])
-width = float(sys.argv[2|)
+width = float(sys.argv[2])
 
 def area_of_rectangle(height, width = None):
     """
@@ -33,11 +33,11 @@ def area_of_rectangle(height, width = None):
     14
     """
     
-    if (len(sys.argv)==2)):
+    if (len(sys.argv) == 2):
         area = 2 * height
         return area
 
-    if(len(sys.argv) == 2)):
+    if(len(sys.argv) == 3):
         area = height * width
         return area
     
@@ -49,6 +49,6 @@ def area_of_rectangle(height, width = None):
         sys.exit(message)
 
 if __name__ == '__main__':
-    area = area_rectangle(height, width)
+    area = area_of_rectangle(height, width)
     message  = ("The area of a {h} X {w} rectangle is {a}".format(h=sys.argv[1], w=sys.argv[2], a=area))
     print(message)
